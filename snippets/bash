@@ -1,0 +1,9 @@
+# Report total size for a find result.
+find . -maxdepth 1 -type f -mtime +30 -print0 | du --files0-from=- -hc
+
+# Only report hosts that match
+for node in host-{1..7};do ssh $node pgrep rsync 1> /dev/null; if [ $? -eq 0 ];then echo "$node"; fi;done
+host-3
+host-4
+host-6
+

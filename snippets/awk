@@ -1,0 +1,2 @@
+# Show lines between two patterns
+awk '/^114456723:/,/^114459234:/' file

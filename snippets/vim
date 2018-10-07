@@ -1,0 +1,10 @@
+# Delete lines not matching pattern
+:g!/pattern/d
+
+# To delete the columns 3 through 5 for all lines in the file:
+:%normal 3|d6|
+
+# In order to delete an specific line interval (80 to 90), use this:
+:80,90normal 3|d6|
+
+# To do a "sort | uniq" in vim use "%sort u" in command mode.
