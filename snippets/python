@@ -1,3 +1,6 @@
 # Start interactive interpreter anywhere you need it in code.
 import code;code.interact(local=dict(globals(), **locals()))
 
+# Start a file in interactive shell
+python -i main.py
+>>> 
