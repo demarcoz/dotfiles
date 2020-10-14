@@ -7,3 +7,17 @@ host-3
 host-4
 host-6
 
+# ----- repeat command with new argument
+[localhost@user ~]$ echo foo
+foo
+[localhost@user ~]$ !!:0 bar
+bar
+
+
+# ----- command subst
+[localhost@user ~]$ today=$(date +%Y%m%d)
+[localhost@user ~]$ echo $today
+20201014
+
+
+# ----- EOF
