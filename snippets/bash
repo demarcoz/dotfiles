@@ -34,4 +34,12 @@ bar
 [localhost@user ~]$ mkdir -m 755 project
 
 
+# ----- Side by side diff
+[localhost@user ~]$ diff -y --side-by-side {a,b}.txt
+One                                                             One
+Two                                                             Two
+Three                                                         <
+Four                                                            Four
+
+
 # ----- EOF
