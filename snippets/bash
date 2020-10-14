@@ -13,6 +13,12 @@ foo
 [localhost@user ~]$ !!:0 bar
 bar
 
+# alternative way
+[localhost@user ~]$ echo foo
+foo
+[localhost@user ~]$ ^foo^bar
+bar
+
 
 # ----- command subst
 [localhost@user ~]$ today=$(date +%Y%m%d)
