@@ -13,11 +13,25 @@ foo
 [localhost@user ~]$ !!:0 bar
 bar
 
+# alternative way
+[localhost@user ~]$ echo foo
+foo
+[localhost@user ~]$ ^foo^bar
+bar
+
 
 # ----- command subst
 [localhost@user ~]$ today=$(date +%Y%m%d)
 [localhost@user ~]$ echo $today
 20201014
+
+
+# ----- show bash keyboard shortcuts
+[localhost@user ~]$ bind -pgrep
+
+
+# ----- create folder and set permission
+[localhost@user ~]$ mkdir -m 755 project
 
 
 # ----- EOF
