@@ -20,4 +20,8 @@ bar
 20201014
 
 
+# ----- show bash keyboard shortcuts
+[localhost@user ~]$ bind -pgrep
+
+
 # ----- EOF
