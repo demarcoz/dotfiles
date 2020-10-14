@@ -30,4 +30,8 @@ bar
 [localhost@user ~]$ bind -pgrep
 
 
+# ----- create folder and set permission
+[localhost@user ~]$ mkdir -m 755 project
+
+
 # ----- EOF
