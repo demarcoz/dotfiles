@@ -4,3 +4,24 @@ import code;code.interact(local=dict(globals(), **locals()))
 # Start a file in interactive shell
 python -i main.py
 >>> 
+
+# ----- Anagrams
+# Check if two strings are anagrams
+
+from collections import Counter
+
+def anagram(first, second):
+    return Counter(first) == Counter(second)
+
+
+anagram("abcd3", "3acdb") # True
+
+# ----- Chunk
+# Split a list into smaller lists
+
+
+def chunk(list, size):
+    return [list[i:i+size] for i in range(0,len(list), size)]
+
+
+# ----- EOF
