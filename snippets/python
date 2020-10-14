@@ -24,4 +24,17 @@ def chunk(list, size):
     return [list[i:i+size] for i in range(0,len(list), size)]
 
 
+# ----- Print path of module
+import os
+print(os)
+
+Output:
+<module 'os' from '/usr/lib/python3.5/os.py'>
+
+# ----- Check memory size
+import sys
+y = "sample string"
+print*(sys.getsize(y))
+
+
 # ----- EOF
